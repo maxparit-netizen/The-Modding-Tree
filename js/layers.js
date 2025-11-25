@@ -46,9 +46,8 @@ addLayer("p", {
             },
             effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
             },
-        },
         14: {
-            title: "another upgrade",
+            title: "another upgrade i think",
             description: "Boost prestige point gain based on prestige points.",
             cost: new Decimal(30),
             effect() {
@@ -57,4 +56,5 @@ addLayer("p", {
             effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
             },
         },
+    }
 )
