@@ -55,6 +55,15 @@ addLayer("p", {
             },
             effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
             },
+        15: {
+            title: "another upgrade i think",
+            description: "Boost point gain based on points.",
+            cost: new Decimal(30),
+            effect() {
+                return player.points.add(1).pow(0.5)
+            },
+            effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
+            },
         },
     }
 )
