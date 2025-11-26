@@ -47,6 +47,7 @@ function getPointGen() {
 	mult = new Decimal(1)
     if (hasUpgrade('p', 13)) mult = mult.times(upgradeEffect('p', 13))
 	if (hasUpgrade('p', 15)) mult = mult.times(upgradeEffect('p', 15))
+	mult = mult.times(new Decimal(2).pow(player["rebirth"].points.pow(2)))
 	gain = gain.times(mult)
 	return gain
 }
